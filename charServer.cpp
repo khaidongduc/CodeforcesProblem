@@ -6,11 +6,13 @@
 
 using namespace std;
 
+const int maxLength = 110;
+
 int main() {
-    char s[110];
+    char s[maxLength];
     int totalByteSend = 0;
     int numPeople = 0;
-    while (gets(s)) {
+    while (fgets(s, 110, stdin)) {
         if (s[0] == '+') ++ numPeople;
         else if (s[0] == '-') -- numPeople;
         else {
