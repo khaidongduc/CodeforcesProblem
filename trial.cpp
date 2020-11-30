@@ -1,8 +1,10 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main(){
-    freopen("main.inp", "r", stdin)
-    
+    vector <int> a(3, 5);
+    for(int elem : a) cout << elem << "\n";
+
 }
